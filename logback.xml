@@ -7,7 +7,7 @@
 	<appender name="ROLLINGFILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
 		<File>${zookeeper.log.dir}/${zookeeper.log.file}</File>
 		<encoder>
-			<pattern>%d{ISO8601} [myid:%X{myid}] - %-5p [%t:%C{1}@%L] - %m%n</pattern>
+			<pattern>%m%n</pattern>
 		</encoder>
 		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
 			<level>${zookeeper.log.threshold}</level>
